@@ -25,7 +25,12 @@
             <div class="row">
                
                 <div class="col-md-12">
-                    <h1>Spring MVC and Thymeleaf with Maven  java based configuration</h1>
+                   <form action="#" th:action="@{/add}"  method="post">
+    					<input type="text" id="name" name="name" th:value="" />
+    					<input type="text" id="gender" name="gender" th:value="" />
+    					<input type="text" id="address" name="address" th:value="" />
+    					<input type="submit" value="Submit" />
+				   </form>
                 </div>
               
             </div>

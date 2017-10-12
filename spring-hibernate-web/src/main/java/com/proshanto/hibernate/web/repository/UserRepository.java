@@ -25,6 +25,6 @@ public class UserRepository {
 	
 	public void save(User user) {
 		Session session = this.sessionFactory.getCurrentSession();
-		System.err.println("session:" + session);
+		session.save(user);
 	}
 }
